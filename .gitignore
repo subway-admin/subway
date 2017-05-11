@@ -1,0 +1,7 @@
+build
+gulp-dist
+gulp-tem
+interface-word
+node_modules
+bower_components
+tests

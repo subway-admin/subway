@@ -1,0 +1,78 @@
+@import "veriable";
+header{
+  background-color: $bg_theme;
+
+  div{
+    display: inline-block;
+  }
+  div:first-child{
+    height: 60px;
+    line-height: 60px;
+    >img{
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      margin-left:75px ;
+    }
+  }
+  div:nth-child(2){
+    float: right;
+    >ul.layui-nav{
+      display: inline-block;
+      li.layui-nav-item{
+        a{
+          color:$col_theme;
+          span{
+            border-color: $col_theme transparent transparent;
+          }
+        }
+        a:hover{
+          color:dodgerblue;
+          span{
+            top:22px;
+            border-style: dashed dashed dashed;
+            border-color: transparent transparent dodgerblue;
+          }
+        }
+      }
+    }
+  }
+  .layui-nav{
+    background-color: $bg_theme;
+  }
+}
+//²à±ßÀ¸
+.x-side.layui-bg-black{
+  top:60px;
+  margin: 0;
+  background-color: $bg_theme;
+  border-top: 1px solid #e2e2e2;
+  #sidebar{
+    background-color: $bg_theme;
+    li{
+      padding: 5px 0;
+      //border-bottom: 1px solid red;
+      a{
+        color:$col_theme;
+        i{
+          display: none;
+        }
+      }
+
+      ul.layui-show{
+        margin-left: 0!important;
+        li{
+          padding-left: 20px;
+        }
+      }
+    }
+    li[data-spread]{
+      margin-left: 0!important;
+    }
+  }
+}
+
+.site-demo-title.x-main{
+  top: 60px;
+  margin: 0;
+}
