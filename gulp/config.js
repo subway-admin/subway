@@ -3,7 +3,7 @@
  */
 var VERSION = require('../package.json').version,
     path = require('path'),
-    root = '',
+    root = 'app',
     output = '';
 function resolveToApp(files) {
     return path.join(root, files);
@@ -15,7 +15,7 @@ function resolveToOut(files) {
 
 module.exports = {
     banner: '',
-    output: '',
+    output: 'build',
     debug: 'debug',
     entry: '',
     root: 'app',
@@ -25,12 +25,12 @@ module.exports = {
     paths: {
         js: resolveToApp('/**/*!(.doc.js).js'),
         componentJs: resolveToApp('/component/**/*!(.doc.js).js'),
-        docJs: resolveToApp('/**/*.doc.js'),
-        css:resolveToApp('sass/**/*.scss'),
+        libjs: resolveToApp('/**/js/**/*.*'),
+        css:resolveToApp('/**/*.scss'),
         img:resolveToApp('/**/images/*.*'),
         font:resolveToApp('/**/font/*.*'),
         lib:resolveToApp('/**/lib/**/*.*'),
-        data:resolveToApp('/**/data/*.*'),
+        data:resolveToApp('/**/test-data/*.*'),
         templates:resolveToApp('/**/templates/*.*'),
         html: [
             resolveToApp('/**/*.html')

@@ -6,6 +6,6 @@ var gulp = require('gulp'),
     config = require('../config');// gulp公共配置
 
 exports.task = function () {
-    return gulp.src([config.paths.img,config.paths.font,config.paths.lib,config.paths.data,config.paths.templates])
+    return gulp.src([config.paths.img,config.paths.font,config.paths.lib,config.paths.libjs,config.paths.data])
         .pipe(gulp.dest(config.output))
 };

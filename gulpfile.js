@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 gulp.task('default', ['clean'], function () {
     var log = gutil.colors.red('start');
     gutil.log(gutil.colors.bgBlack(log));
-    runSequence(['clean','cssmin']);
+    runSequence(['clean','copy','cssmin','concat','htmlmin']);
 });
 
 // 从gulp目录读取任务

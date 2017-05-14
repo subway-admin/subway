@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        车站沉降检测
+    </title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../../sass/x-admin.css" media="all">
+    <link rel="stylesheet" href="interval-analysis.css">
+</head>
+<body>
+<div class="x-body">
+    <form class="layui-form" action="">
+        <div class="layui-form-item">
+        <div class="layui-input-block">
+            <select name="city" lay-verify="required">
+                <option value="">--请选择--</option>
+                <option value="0">地铁1号线</option>
+                <option value="0">地铁2号线</option>
+                <option value="0">地铁3号线</option>
+            </select>
+        </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">输入框</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required  lay-verify="required" placeholder="选择日期" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">选择框</label>
+            <div class="layui-input-block">
+                <select name="city" lay-verify="required">
+                    <option value="">按条件搜索</option>
+                    <option value="0">测点编号</option>
+                    <option value="1">标注</option>
+                    <option value="2">测点类别</option>
+                    <option value="3">断面里程</option>
+                    <option value="4">方向</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="text" name="title" required  lay-verify="required" placeholder="自定义分析条件" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+    </form>
+    <div class="layui-btn layui-btn-primary">沉降拟合</div>
+    <div class="layui-btn layui-btn-primary">曲率半径</div>
+    <div class="layui-btn layui-btn-primary">相对曲率半径</div>
+    <div class="layui-btn layui-btn-primary export">结果导出</div>
+
+    <div id="main" style="width: 100%;height:400px;"></div>
+
+</div>
+<script src="../../../lib/layui/layui.js" charset="utf-8"></script>
+<script src="//cdn.bootcss.com/echarts/3.3.2/echarts.min.js" charset="utf-8"></script>
+<!--<script src="../../../../bower_components/dot/doT.min.js"></script>-->
+<script src="../../../js/config.js"></script>
+<script src="../../../js/asyn-load.js"></script>
+<script src="interval-analysis.js"></script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: ""
+        },
+        tooltip: {
+            trigger:"axis"
+        },
+        legend: {
+            data:['温度']
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        toolbox: {
+            feature: {
+                saveAsImage: {}
+            }
+        },
+        xAxis: {
+            type: "category",
+            boundaryGap: false,
+            data: [0,400,800,1200,1600,2000,2400,2800,3200,3600,4000,4400,4800,5200,5600,6000,6400,6800,7200,7600]
+        },
+        yAxis: {
+            type: "value"
+        },
+        series: [
+            {
+                name:"温度",
+                type:"line",
+                stack: "里程",
+                data:[120, 132, 101, 134, 90, 230, 210,120, 132, 101, 134, 90, 230, 210,120, 132, 101, 134, 90, 230, 210]
+            }
+        ]
+    };
+
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+<!--<script src="../js/x-admin.js"></script>-->
+</body>
+</html>

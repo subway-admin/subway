@@ -11,9 +11,7 @@
   "amd": {},
   "volo": {
     "baseUrl": "www/js/lib",
-    "dependencies": {
-
-    }
+    "dependencies": {}
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",
@@ -30,5 +28,11 @@
     "gulp-sourcemaps": "^2.5.0",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^4.3.11"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2"
   }
 }

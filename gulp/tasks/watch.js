@@ -17,5 +17,5 @@ exports.task = function () {
         open: false,
         port:8085
     });
-    gulp.watch(['sass/**/*.scss','*.html'],['default',sync.reload])
+    gulp.watch(['app/**/*.scss','app/**/*.html','app/**/*.js'],['default',sync.reload])
 };

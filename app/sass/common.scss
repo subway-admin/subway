@@ -1,0 +1,8 @@
+@import "veriable";
+.layui-btn-primary{
+  border-radius: 10px;
+}
+.layui-btn-primary:hover{
+  color:$col_theme;
+  border: 1px solid $col_theme;
+}

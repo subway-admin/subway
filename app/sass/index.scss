@@ -1,4 +1,6 @@
 @import "veriable";
+
+//Í·²¿
 header{
   background-color: $bg_theme;
 
@@ -21,9 +23,9 @@ header{
       display: inline-block;
       li.layui-nav-item{
         a{
-          color:$col_theme;
+          color:$font_theme;
           span{
-            border-color: $col_theme transparent transparent;
+            border-color: $font_theme transparent transparent;
           }
         }
         a:hover{
@@ -41,6 +43,7 @@ header{
     background-color: $bg_theme;
   }
 }
+
 //²à±ßÀ¸
 .x-side.layui-bg-black{
   top:60px;
@@ -53,7 +56,7 @@ header{
       padding: 5px 0;
       //border-bottom: 1px solid red;
       a{
-        color:$col_theme;
+        color:$font_theme;
         i{
           display: none;
         }

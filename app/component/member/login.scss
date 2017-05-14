@@ -1,0 +1,48 @@
+@import "../../sass/entrance";
+.x-box {
+  width: 500px;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+  height: auto;
+  background: white;
+  .x-middle {
+    background: white;
+    .x-avtar {
+      font-size: 22px;
+      line-height: 115px;
+    }
+    form {
+      .x-login-box {
+        width: 500px;
+        .layui-form-label {
+          width: 100px !important;
+        }
+        input{
+          font-size: 20px;
+        }
+      }
+      #loginbtn{
+        position: initial;
+        .layui-btn{
+          float:left;
+          width: 50%;
+          margin-left: 0;
+          background:white;
+          color:$font_theme;
+          font-size: 15px;
+          span.btn{
+            border:1px solid #5f5f5f;
+            padding: 10px 20px;
+            border-radius:10px;
+          }
+          span.forget{
+
+          }
+          span.register{
+
+          }
+        }
+      }
+    }
+  }
+}

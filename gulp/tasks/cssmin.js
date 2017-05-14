@@ -11,13 +11,12 @@ var gulp = require('gulp'),
     config = require('../config');// gulp公共配置
 
 exports.task = function () {
-    console.log(config.paths.css);
-    console.log(config.output+'/css');
-    return gulp.src(['sass/**/*.scss'])
+
+    return gulp.src(config.paths.css)
         .pipe(sass().on('error', sass.logError))
         //.pipe(sourcemaps.init({loadMaps: true}))
         // .pipe(concatCss("main.css"))
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest(config.output));
         //.pipe(cssmin())
         //.pipe(rename({suffix:'.min'}))
         //.pipe(sourcemaps.write('./'))
