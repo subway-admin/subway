@@ -54,7 +54,7 @@
             {
               "name": "监测点分析",
               "id": 11,
-              "url": "",
+              "url":"../component/interval-subsidence-monitoring/monitoring-point.html",
               "children":[
                 {
                   "name":"沉降曲线"

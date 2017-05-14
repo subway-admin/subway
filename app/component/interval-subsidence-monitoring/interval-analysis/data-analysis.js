@@ -6,8 +6,9 @@ layui.use('layer', function(){
     $ = layui.jquery;
     $("input[name='customAnalysis']").on('click',function(){
         layer.open({
-            type: 1,
-            content: 'data-analysis-dialog.html'
+            type: 2,
+            area: ['700px','457px'],
+            content: './data-analysis-dialog.html'
         });
     });
 

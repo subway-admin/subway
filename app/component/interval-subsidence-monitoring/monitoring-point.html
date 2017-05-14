@@ -11,8 +11,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="../../../sass/x-admin.css" media="all">
-    <link rel="stylesheet" href="interval-analysis.css">
+    <link rel="stylesheet" href="../sass/x-admin.css" media="all">
+    <link rel="stylesheet" href="interval-analysis/interval-analysis.css">
 </head>
 <body>
 <div class="x-body">
@@ -53,51 +53,11 @@
         </div>
     </form>
 
-    <div class="layui-btn layui-btn-primary">曲率<div class="layui-btn layui-btn-primary">沉降拟合</div>半径</div>
-    <div class="layui-btn layui-btn-primary">相对曲率半径</div>
-    <fieldset class="layui-elem-field layui-field-title site-title">
-        <legend><a name="default">信息统计</a></legend>
-    </fieldset>
-    <table class="layui-table">
-        <thead>
-        <tr>
-            <th>测点编号</th>
-            <th>标注</th>
-            <th>测点类别</th>
-            <th>断面里程</th>
-            <th>方向</th>
-            <th>区段名称</th>
-            <th>断面类型</th>
-            <th>初测时间</th>
-            <th>初始高程/m</th>
-            <th>监测单位</th>
-        </tr>
-        </thead>
-        <tbody>
-        <script id="monitoring" type="text/x-dot-template">
-            {{~it :item:index}}
-            <tr>
-                <td>{{= item.number}}</td>
-                <td>{{= item.maker}}</td>
-                <td>{{= item.classify}}</td>
-                <td>{{= item.mileage}}</td>
-                <td>{{= item.direction}}</td>
-                <td>{{= item.name}}</td>
-                <td>{{= item.type}}</td>
-                <td>{{= item.time}}</td>
-                <td>{{= item.elevation}}</td>
-                <td>{{= item.unit}}</td>
-            </tr>
-            {{~}}
-        </script>
-        </tbody>
-    </table>
-
 </div>
-<script src="../../../lib/layui/layui.js" charset="utf-8"></script>
-<script src="../../../../bower_components/dot/doT.min.js"></script>
-<script src="../../../js/config.js"></script>
-<script src="../../../js/asyn-load.js"></script>
+<script src="../lib/layui/layui.js" charset="utf-8"></script>
+<script src="../../bower_components/dot/doT.min.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/asyn-load.js"></script>
 <script src="data-analysis.js"></script>
 <!--<script src="../js/x-admin.js"></script>-->
 </body>
