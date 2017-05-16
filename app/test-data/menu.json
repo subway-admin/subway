@@ -5,173 +5,24 @@
       "spread": true,
       "children":[
         {
-          "name":"区间沉降监测",
+          "name":"车站监测",
           "url":"../component/interval-subsidence-monitoring/monitoring-station-subsidence.html",
-          "id":3,
-          "children": [
-            {
-              "name": "车站沉降监测",
-              "id": 11,
-              "url": "./echarts1.html"
-            },
-            {
-              "name": "车辆沉段沉降监测",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "停车场沉降监测",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "数据分析(沉降拟合)",
-              "id": 11,
-              "url":"../component/interval-subsidence-monitoring/interval-analysis/interval-analysis.html",
-              "children":[
-                {
-                  "name": "自定义分析条件",
-                  "id": 11,
-                  "url":"../component/interval-subsidence-monitoring/interval-analysis/data-analysis.html"
-                },
-                {
-                  "name": "数据分析(曲率半径)",
-                  "id": 11,
-                  "url":""
-                }
-              ]
-            },
-            {
-              "name": "重点断面",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "增加测点",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "监测点分析",
-              "id": 11,
-              "url":"../component/interval-subsidence-monitoring/monitoring-point.html",
-              "children":[
-                {
-                  "name":"沉降曲线"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name":"位移检测数据(区间)",
-          "url":"",
-          "id":3,
-          "children": [
-            {
-              "name": "位移监测(车站)",
-              "id": 11,
-              "url": ""
-            },
-            {
-              "name": "位移监测(停车场)",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "位移监测(车辆段)",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "增加测点",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "重点断面",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "数据分析(位移拟合)",
-              "id": 11,
-              "url":"",
-              "children":[
-                {
-                  "name":"数据分析(曲率半径)"
-                }
-              ]
-            },
-            {
-              "name": "位移监测点分析",
-              "id": 11,
-              "url": "",
-              "children":[
-                {
-                  "name":"位移曲线"
-                }
-              ]
-            }
-          ]
+          "id":3
         },
         {
           "id":4,
-          "name":"管径收敛监测(区间)",
-          "url":"",
-          "children":[
-            {
-              "id":33,
-              "name":"增加测点",
-              "url":""
-            },
-            {
-              "id":34,
-              "name":"数据分析(收敛散点)",
-              "url":"",
-              "children":[
-                {
-                  "id":45,
-                  "name":"自定义条件",
-                  "url":""
-                }
-              ]
-            },
-            {
-              "id":34,
-              "name":"监测点分析",
-              "url":"",
-              "children":[
-                {
-                  "id":45,
-                  "name":"收敛曲线",
-                  "url":""
-                }
-              ]
-            },
-            {
-              "id":45,
-              "name":"重点断面",
-              "url":""
-            }
-          ]
+          "name":"区间监测",
+          "url":""
         },
         {
           "id":45,
-          "name":"参数设置",
-          "url":"",
-          "children":[
-            {
-              "id":45,
-              "name":"监护标准",
-              "url":""
-            },
-            {
-              "id":45,
-              "name":"对象赋值",
-              "url":""
-            }
-          ]
+          "name":"车辆段监测",
+          "url":""
+        },
+        {
+          "id":24,
+          "name":"停车场监测",
+          "url":""
         }
       ]
     },
@@ -181,119 +32,24 @@
       "spread": true,
       "children":[
         {
-          "name":"区间沉降监测",
-          "url":"../component/category.html",
+          "name":"车站监测",
+          "url":"../component/interval-subsidence-monitoring/monitoring-station-subsidence.html",
           "id":3
         },
         {
-          "name":"位移检测数据(区间)",
-          "url":"",
-          "id":3,
-          "children": [
-            {
-              "name": "位移监测(车站)",
-              "id": 11,
-              "url": ""
-            },
-            {
-              "name": "位移监测(停车场)",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "位移监测(车辆段)",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "增加测点",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "重点断面",
-              "id": 11,
-              "url":""
-            },
-            {
-              "name": "数据分析(位移拟合)",
-              "id": 11,
-              "url":"",
-              "children":[
-                {
-                  "name":"数据分析(曲率半径)"
-                }
-              ]
-            },
-            {
-              "name": "位移监测点分析",
-              "id": 11,
-              "url": "",
-              "children":[
-                {
-                  "name":"位移曲线"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "id":4,
-          "name":"管径收敛监测(区间)",
-          "url":"",
-          "children":[
-            {
-              "id":33,
-              "name":"增加测点",
-              "url":""
-            },
-            {
-              "id":34,
-              "name":"数据分析(收敛散点)",
-              "url":"",
-              "children":[
-                {
-                  "id":45,
-                  "name":"自定义条件",
-                  "url":""
-                }
-              ]
-            },
-            {
-              "id":34,
-              "name":"监测点分析",
-              "url":"",
-              "children":[
-                {
-                  "id":45,
-                  "name":"收敛曲线",
-                  "url":""
-                }
-              ]
-            },
-            {
-              "id":45,
-              "name":"重点断面",
-              "url":""
-            }
-          ]
+          "name":"区间监测",
+          "url":""
         },
         {
           "id":45,
-          "name":"参数设置",
-          "url":"",
-          "children":[
-            {
-              "id":45,
-              "name":"监护标准",
-              "url":""
-            },
-            {
-              "id":45,
-              "name":"对象赋值",
-              "url":""
-            }
-          ]
+          "name":"车辆段监测",
+          "url":""
+        },
+        {
+          "id":24,
+          "name":"停车场监测",
+          "url":""
         }
       ]
     }]

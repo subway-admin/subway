@@ -19,19 +19,6 @@
     
     <body style="background-color: white">
         <div class="x-box">
-            <!--<div class="x-top">-->
-                <!--<i class="layui-icon x-login-close">-->
-                    <!--&#x1007;-->
-                <!--</i>-->
-                <!--<ul class="x-login-right">-->
-                    <!--<li style="background-color: #F1C85F;" color="#F1C85F">-->
-                    <!--</li>-->
-                    <!--<li style="background-color: #EA569A;" color="#EA569A">-->
-                    <!--</li>-->
-                    <!--<li style="background-color: #393D49;" color="#393D49">-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
             <div class="x-middle">
                 <div class="x-avtar">
                     武汉地铁运行监护数据管理系统
@@ -78,17 +65,17 @@
                 var form = layui.form(),
                 layer = layui.layer;
 
+                location.href = "../index.html";
                 //监听提交
-                form.on('submit(save)',
-                function(data) {
-                    console.log(data);
-                    layer.alert(JSON.stringify(data.field), {
-                      title: '最终的提交信息'
-                    },function  () {
-                        location.href = "../index.html";
-                    });
-                    return false;
-                });
+//                form.on('submit(save)',
+//                function(data) {
+//                    console.log(data);
+//                    layer.alert(JSON.stringify(data.field), {
+//                      title: '最终的提交信息'
+//                    },function  () {
+//                    });
+//                    return false;
+//                });
 
             });
 

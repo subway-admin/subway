@@ -1,0 +1,46 @@
+/****checkbox*******/
+@import "veriable";
+input[type=checkbox].checkbox, input[type=radio].radio {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-appearance: none;
+  background-color: transparent;
+  outline: 0 !important;
+  border: 0;
+  font-size: 20px !important;
+}
+
+input[type=checkbox].checkbox:before, input[type=radio].circle:before {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 10px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #c2c2c2;
+}
+
+input[type=checkbox].checkbox:checked:before, input[type=radio].radio:checked:before {
+  color: red;
+}
+
+input[type=radio].circle:checked:before {
+  color: red;
+}
+
+input[type=checkbox].checkbox:before {
+  content: "\e62a";
+}
+
+input[type=checkbox].checkbox:checked:before {
+  content: "\e645";
+}
+
+input[type=radio].circle:before {
+  content: "\e671";
+}
+
+input[type=radio].circle:checked:before {
+  content: "\e659";
+}

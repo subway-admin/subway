@@ -33,6 +33,8 @@ layui.use(['element','tree', 'layer'], function(){
 					element.tabChange('x-tab', $('.layui-tab-title li').length-1);
 
 					$('.layui-tab-title li').eq(0).find('i').remove();
+					$('.layui-tab-title li').eq(1).find('i').remove();
+					$('.layui-tab-title li').eq(2).find('i').remove();
 
 				}
 				,nodes: data.nodes
@@ -50,6 +52,8 @@ layui.use(['element','tree', 'layer'], function(){
 	});
 
 	$('.layui-tab-title li').eq(0).find('i').remove();
+	$('.layui-tab-title li').eq(1).find('i').remove();
+	$('.layui-tab-title li').eq(2).find('i').remove();
 
 	height = $('.layui-layout-admin .site-demo').height();
 	$('.layui-layout-admin .site-demo').height(height-100);
@@ -73,30 +77,6 @@ layui.use(['element','tree', 'layer'], function(){
 		}
 
 	});
-
-  	//监听导航点击
-  	element.on('nav(side)', function(elem){
-    	title = elem.find('cite').text();
-    	url = elem.find('a').attr('_href');
-    	// alert(url);
-
-    	for (var i = 0; i <$('.x-iframe').length; i++) {
-    		if($('.x-iframe').eq(i).attr('src')==url){
-    			element.tabChange('x-tab', i);
-    			return;
-    		}
-    	}
-
-    	res = element.tabAdd('x-tab', {
-	        title: title//用于演示
-	        ,content: '<iframe frameborder="0" src="'+url+'" class="x-iframe"></iframe>'
-		    });
-
-
-		element.tabChange('x-tab', $('.layui-tab-title li').length-1);
-
-    	$('.layui-tab-title li').eq(0).find('i').remove();
-  });
 });
 
 
