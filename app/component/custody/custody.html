@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        车站沉降检测
+    </title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../font/iconfont.css">
+    <link rel="stylesheet" href="../../sass/x-admin.css" media="all">
+    <link rel="stylesheet" href="../../sass/common.css">
+    <link rel="stylesheet" href="custody.css">
+</head>
+<body>
+<div class="x-body">
+    <form class="layui-form" action="">
+        <div class="layui-btn layui-btn-primary">增加数据</div>
+        <div class="layui-btn layui-btn-primary">删除数据</div>
+        <div class="layui-btn layui-btn-primary">清空数据</div>
+        <div class="layui-btn layui-btn-primary">excel导入</div>
+        <div class="layui-btn layui-btn-primary">excel导出</div>
+
+        <div class="layui-input-block">
+            <select name="city" lay-verify="required">
+                <option value="">按条件搜索</option>
+                <option value="0">测点编号</option>
+                <option value="1">标注</option>
+                <option value="2">测点类别</option>
+                <option value="3">断面里程</option>
+                <option value="4">方向</option>
+            </select>
+        </div>
+    </form>
+    <table class="layui-table">
+        <thead>
+        <tr>
+            <th width="40"><input type="checkbox" class="iconfont checkbox" /></th>
+            <th>序号</th>
+            <th>监护指标</th>
+            <th>监护标准</th>
+            <th>备注说明</th>
+            <th>适用对象赋值</th>
+        </tr>
+        </thead>
+        <tbody>
+        <script id="monitoring" type="text/x-dot-template">
+            {{~it :item:index}}
+            <tr>
+                <th width="40"><input type="checkbox" class="iconfont checkbox" /></th>
+                <td>{{= item.number}}</td>
+                <td>{{= item.maker}}</td>
+                <td>{{= item.classify}}</td>
+                <td>{{= item.mileage}}</td>
+                <td>{{= item.direction}}</td>
+            </tr>
+            {{~}}
+        </script>
+        </tbody>
+    </table>
+
+</div>
+<script src="../../lib/layui/layui.js" charset="utf-8"></script>
+<script src="../../../bower_components/dot/doT.min.js"></script>
+<script src="../../js/config.js"></script>
+<script src="../../js/asyn-load.js"></script>
+<script src="custody.js"></script>
+<!--<script src="../js/x-admin.js"></script>-->
+</body>
+</html>

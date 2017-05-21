@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>
+        车站沉降检测
+    </title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../../sass/x-admin.css" media="all">
+    <link rel="stylesheet" href="interval-analysis.css">
+</head>
+<body>
+    <div class="dialog">
+        <form class="layui-form" action="">
+            <div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">按里程分析</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="sex" value="router" title="router" checked>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">起点里程</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="默认起点" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">终点里程</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="默认终点" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-btn layui-btn-primary">全部路线</div>
+            </div>
+            <div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">按位置分析</label>
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value="">选择区间</option>
+                            <option value="0">区间1</option>
+                            <option value="0">区间2</option>
+                            <option value="0">区间3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">盾构隧道</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="" title="盾构隧道" lay-skin="primary">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">矿山隧道</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="" checked>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">盾构隧道</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="" title="盾构隧道" lay-skin="primary">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">矿山隧道</label>
+                    <div class="layui-input-block">
+                        <input type="checkbox" name="" checked>
+                    </div>
+                </div>
+            </div>
+            <div class="confirm">
+                <div class="layui-btn layui-btn-primary">保持</div>
+                <div class="layui-btn layui-btn-primary">清空</div>
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="../../../lib/layui/layui.js" charset="utf-8"></script>
+<script>
+    layui.use('form', function(){
+        var form = layui.form();
+    });
+</script>
+</html>

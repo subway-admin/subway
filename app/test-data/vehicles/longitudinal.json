@@ -1,0 +1,28 @@
+{
+  "data":[
+    {
+      "number":"SZ6980",
+      "maker":"红色",
+      "classify":"固定点",
+      "mileage":"P00+100",
+      "direction":"左线",
+      "name":"四平路站-国权路站",
+      "type":"盾构隧道",
+      "time":"2016.01.02",
+      "elevation":"X,Y",
+      "unit":"武汉市测绘院"
+    },
+    {
+      "number":"SZ6980",
+      "maker":"绿色",
+      "classify":"固定点",
+      "mileage":"P00+100",
+      "direction":"左线",
+      "name":"四平路站-国权路站",
+      "type":"高架段",
+      "time":"2016.01.02",
+      "elevation":"X,Y",
+      "unit":"武汉市测绘院"
+    }
+  ]
+}

@@ -125,6 +125,7 @@ layui.define('jquery', function(exports){
       ,CLOSE = 'layui-tab-close', that = this;
       
       $('.layui-tab').each(function(){
+        console.log('----');
         var othis = $(this)
         ,title = othis.children('.layui-tab-title')
         ,item = othis.children('.layui-tab-content').children('.layui-tab-item')

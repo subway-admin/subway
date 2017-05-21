@@ -1,0 +1,33 @@
+@import "../../../sass/entrance";
+.x-body
+{
+  form{
+    width: 100%;
+    >div{
+      width: 100%;
+      .layui-form-item{
+        width:32.33%;
+        min-width: 350px;
+        .layui-input-block{
+          width: 230px;
+        }
+        &.layui-form-text{
+          .layui-input-block{
+            margin-left: 120px;
+            display: block;
+            width: 80%;
+          }
+        }
+      }
+    }
+    .control{
+      text-align: center;
+      .layui-btn{
+        +.layui-btn{
+          margin-left:50px;
+        }
+      }
+    }
+  }
+
+}
