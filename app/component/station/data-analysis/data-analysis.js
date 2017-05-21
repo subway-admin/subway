@@ -4,17 +4,32 @@
 layui.use('layer', function(){
     var layer = layui.layer,
     $ = layui.jquery;
-    //$("input[name='customAnalysis']").on('click',function(){
-    //    layer.open({
-    //        type: 2,
-    //        area: ['700px','457px'],
-    //        content: './data-analysis-dialog.html'
-    //    });
-    //});
+    $('#customAnalysis').on('click',function(){
+        layerSer.init({
+            jquery:$,
+            localUrl:"./data-analysis-dialog.html"
+        },{
+            title:"自定义分析条件",
+            area: ['700px',''],
+            btn:"",
+            id:"data-analysis-dialog",
+            callback:function(){
+                //弹框逻辑执行
+                $('.confirm').on('click','.save,.cancle',function(){
+                    layerSer.close();
+                })
+            }
+        });
+    });
+
 
 
 });
-
 layui.use('form', function(){
         var form = layui.form();
 });
+
+//layui.jquery('.confirm').on('click','.save',function(){
+//    alert();
+//    //layerSer.close();
+//})

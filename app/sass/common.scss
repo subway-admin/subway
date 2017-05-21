@@ -1,5 +1,6 @@
 @import "veriable";
 @import "checkbox";
+//按钮
 .layui-btn-primary{
   border-radius: 10px;
 }
@@ -8,6 +9,7 @@
   border: 1px solid $col_theme;
 }
 
+//表格cell居中
 .layui-table{
   tr{
     td,th{
@@ -16,7 +18,8 @@
   }
 }
 
-.x-body
+//表格样式修改
+.x-body,.dialog
 {
   form{
     display: inline-block;
@@ -31,6 +34,7 @@
     .layui-form-item{
       display: inline-block;
     }
+    //checkbox修改
     .layui-form-checkbox {
       margin: 0;
       height: 24px;
@@ -40,12 +44,12 @@
         display: none;
       }
       i{
-        right: 5px;
+        right: 7px;
         font-size: 16px;
         width: 22px;
       }
     }
   }
-
-
 }
+
+

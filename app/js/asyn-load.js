@@ -15,9 +15,9 @@
     } else if (typeof define === 'function' && define['amd']) {
         define('asynLoad',['exports','config'], factory);
     } else {
-        factory(window['asynLoad'] = {},config);
+        factory(window['asynLoad'] = {});
     }
-}(function(koExports,config){
+}(function(koExports){
     //if(layer)
     //layer.config({
     //    path: '../../bower_components/layer/src/'
