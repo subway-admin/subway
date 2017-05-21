@@ -1,0 +1,50 @@
+@import "../../sass/entrance";
+.x-body
+{
+  form{
+    .layui-form-item{
+      display: inline-block;
+      .layui-form-label{
+        width:50px;
+      }
+      .layui-input-block{
+        display: inline-block;
+        margin-left: 10px;
+        width: 120px;
+      }
+      .layui-input-block:first-child{
+        margin-left:0;
+      }
+    }
+  }
+  .layui-btn-primary{
+    //margin-bottom: 10px;
+    margin-left: 10px;
+    &.export{
+      float: right;
+    }
+  }
+}
+
+.dialog{
+  form{
+    .layui-form-item{
+      display: inline-block;
+      .layui-form-label{
+        width:80px;
+      }
+      .layui-input-block{
+
+      }
+    }
+    >div{
+      border-bottom: 1px solid #cfcfcf;
+      padding-top: 15px;
+    }
+    >div.confirm{
+      padding-bottom: 15px;
+      text-align: center;
+    }
+
+  }
+}

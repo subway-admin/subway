@@ -5,9 +5,9 @@
     display: inline-block;
     position: relative;
     top: -5px;
-    margin-bottom: 10px;
     .layui-input-block{
       display: inline-block;
+      margin-top: 10px;
       margin-left: 10px;
       width: 120px;
     }
@@ -23,6 +23,13 @@
         right: 5px;
         font-size: 16px;
         width: 22px;
+      }
+    }
+  }
+  .layui-table{
+    tr{
+      td,th{
+        text-align: center;
       }
     }
   }

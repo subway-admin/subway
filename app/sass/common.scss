@@ -7,3 +7,45 @@
   color:$col_theme;
   border: 1px solid $col_theme;
 }
+
+.layui-table{
+  tr{
+    td,th{
+      text-align: center;
+    }
+  }
+}
+
+.x-body
+{
+  form{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    .layui-input-block{
+      display: inline-block;
+      //margin-top: 10px;
+      margin-left: 10px;
+      width: 120px;
+    }
+    .layui-form-item{
+      display: inline-block;
+    }
+    .layui-form-checkbox {
+      margin: 0;
+      height: 24px;
+      line-height: 22px;
+      padding-right: 22px;
+      >span{
+        display: none;
+      }
+      i{
+        right: 5px;
+        font-size: 16px;
+        width: 22px;
+      }
+    }
+  }
+
+
+}

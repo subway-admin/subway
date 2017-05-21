@@ -60,6 +60,9 @@ header{
         i{
           display: none;
         }
+        &.active{
+          color:red;
+        }
       }
 
       ul.layui-show{

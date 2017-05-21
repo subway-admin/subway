@@ -30,7 +30,7 @@ module.exports = {
         img:resolveToApp('/**/images/*.*'),
         font:resolveToApp('/**/font/*.*'),
         lib:resolveToApp('/**/lib/**/*.*'),
-        data:resolveToApp('/**/test-data/*.*'),
+        data:resolveToApp('/**/test-data/**/*'),
         templates:resolveToApp('/**/templates/*.*'),
         html: [
             resolveToApp('/**/*.html')

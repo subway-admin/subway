@@ -11,7 +11,10 @@ layui.use('layer', function(){
             content: './data-analysis-dialog.html'
         });
     });
-
+console.log(layerSer);
+    layerSer.init({
+        localUrl:"./data-analysis-dialog.html"
+    });
     //asynLoad.ajax({
     //    jquery:$,
     //    data:{},

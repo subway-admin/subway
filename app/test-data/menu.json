@@ -1,28 +1,94 @@
 {
   "nodes": [{
       "name": "轨道交通1号线",
+      "tab_reset":true,
+      "array_url":[
+        {"name":"断面及里程信息",
+          "url":"../component/mileage/mileage.html"
+        },
+        {"name":"监护控制标准",
+          "url":"../component/custody/custody.html"
+        }
+      ],
       "id": 2,
       "spread": true,
       "children":[
         {
           "name":"车站监测",
-          "url":"../component/interval-subsidence-monitoring/monitoring-station-subsidence.html",
+          "tab_reset":true,
+          "home":true,
+          "array_url":[
+            {
+              "name":"纵向沉降监测数据",
+              "url":"../component/station/longitudinal/longitudinal.html"
+            },
+            {
+              "name":"水平位移监测数据",
+              "url":"../component/station/horizontal/horizontal.html"
+            },
+            {
+              "name":"管径收敛监测数据",
+              "url":"../component/station/pipe-diameter/pipe-diameter.html"
+            }
+          ],
           "id":3
         },
         {
           "id":4,
           "name":"区间监测",
-          "url":""
+          "tab_reset":true,
+          "array_url":[
+            {
+              "name":"纵向沉降监测数据",
+              "url":"../component/interval/longitudinal/longitudinal.html"
+            },
+            {
+              "name":"水平位移监测数据",
+              "url":"../component/interval/horizontal/horizontal.html"
+            },
+            {
+              "name":"管径收敛监测数据",
+              "url":"../component/interval/pipe-diameter/pipe-diameter.html"
+            }
+          ]
         },
         {
           "id":45,
           "name":"车辆段监测",
-          "url":""
+          "tab_reset":true,
+          "array_url":[
+            {
+              "name":"纵向沉降监测数据",
+              "url":"../component/vehicles/longitudinal/longitudinal.html"
+            },
+            {
+              "name":"水平位移监测数据",
+              "url":"../component/vehicles/horizontal/horizontal.html"
+            },
+            {
+              "name":"管径收敛监测数据",
+              "url":"../component/vehicles/pipe-diameter/pipe-diameter.html"
+            }
+          ]
         },
         {
           "id":24,
           "name":"停车场监测",
-          "url":""
+          "tab_reset":true,
+          "array_url":[
+            {
+              "name":"纵向沉降监测数据",
+              "url":"../component/car-park/longitudinal/longitudinal.html"
+            },
+            {
+              "name":"水平位移监测数据",
+              "url":"../component/car-park/horizontal/horizontal.html"
+            },
+            {
+              "name":"管径收敛监测数据",
+              "url":"../component/car-park/pipe-diameter/pipe-diameter.html"
+            }
+          ]
         }
       ]
     },

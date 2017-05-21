@@ -1,0 +1,9 @@
+@import "../../../sass/entrance";
+.x-body
+{
+  form{
+    +div{
+      margin-left: 10px;
+    }
+  }
+}
