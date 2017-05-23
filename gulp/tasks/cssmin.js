@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 
 exports.task = function () {
 
-    return gulp.src(config.paths.css)
+    return gulp.src([config.paths.css,config.paths.scss])
         .pipe(sass().on('error', sass.logError))
         //.pipe(sourcemaps.init({loadMaps: true}))
         // .pipe(concatCss("main.css"))

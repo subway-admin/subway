@@ -1,0 +1,41 @@
+
+<form class="layui-form data-analysis-form" action="">
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <select name="city" lay-verify="required">
+                <option value="">--请选择--</option>
+                <option value="0">地铁1号线</option>
+                <option value="0">地铁2号线</option>
+                <option value="0">地铁3号线</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">输入框</label>
+        <div class="layui-input-block">
+            <input type="text" name="customAnalysis" required  lay-verify="required" placeholder="选择日期" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">选择框</label>
+        <div class="layui-input-block">
+            <select name="city" lay-verify="required">
+                <option value="">按条件搜索</option>
+                <option value="0">测点编号</option>
+                <option value="1">标注</option>
+                <option value="2">测点类别</option>
+                <option value="3">断面里程</option>
+                <option value="4">方向</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <input type="text" id="customAnalysis" name="customAnalysis" lay-verify="required" readonly=readonly placeholder="自定义分析条件" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-btn layui-btn-primary" style="margin-left: 10px;">沉降拟合</div>
+    <div class="layui-btn layui-btn-primary">曲率半径</div>
+    <div class="layui-btn layui-btn-primary">相对曲率半径</div>
+</form>
+

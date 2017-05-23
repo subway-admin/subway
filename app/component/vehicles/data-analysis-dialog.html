@@ -1,0 +1,90 @@
+
+    <div class="dialog">
+        <form class="layui-form" action="">
+            <div>
+                <div class="layui-form-item">
+                    <input type="radio" name="router" value="1" title="按里程分析" checked="">
+                    <!--<label >按里程分析</label>-->
+                </div>
+            </div>
+            <div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">起点里程</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="默认起点" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">终点里程</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" required  lay-verify="required" placeholder="默认终点" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-btn layui-btn-primary">全部可分析路线</div>
+            </div>
+            <div>
+                <div class="layui-form-item">
+                    <input type="radio" name="router" value="2" title="按区间分析" checked="">
+                    <!--<label >按区间分析</label>-->
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <select name="city" lay-verify="required">
+                            <option value="">选择区间</option>
+                            <option value="0">区间1</option>
+                            <option value="0">区间2</option>
+                            <option value="0">区间3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="checkboxList">
+                <div class="layui-form-item">
+                    <input type="checkbox" name="router">
+                    <label >盾构隧道</label>
+                </div>
+                <div class="layui-form-item">
+                    <input type="checkbox" name="router">
+                    <label >矿山隧道</label>
+                </div>
+                <div class="layui-form-item">
+                    <input type="checkbox" name="router">
+                    <label >明挖隧道</label>
+                </div>
+                <div class="layui-form-item">
+                    <input type="checkbox" name="router">
+                    <label >全部</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="layui-form-item">
+                        <input type="radio" name="router" value="1" title="按里程分析" checked="">
+                        <!--<label >按里程分析</label>-->
+                    </div>
+                </div>
+            </div>
+            <div class="checkboxList">
+                <div class="layui-form-item">
+                    <input type="checkbox" name="router">
+                    <label >盾构隧道</label>
+                </div>
+                <div class="layui-form-item">
+                    <input type="checkbox" name="router">
+                    <label >矿山隧道</label>
+                </div>
+                <div class="layui-form-item">
+                    <input type="checkbox" name="router">
+                    <label >明挖隧道</label>
+                </div>
+                <div class="layui-form-item">
+                    <input type="checkbox" name="router">
+                    <label >全部</label>
+                </div>
+            </div>
+            <div class="confirm">
+                <div class="layui-btn layui-btn-primary save">保存</div>
+                <div class="layui-btn layui-btn-primary cancle">清空</div>
+            </div>
+        </form>
+    </div>

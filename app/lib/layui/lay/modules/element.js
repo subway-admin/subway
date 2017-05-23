@@ -60,7 +60,6 @@ layui.define('jquery', function(exports){
     ,tabElem = $('.layui-tab[lay-filter='+ filter +']')
     ,titElem = tabElem.children(TITLE)
     ,liElem = titElem.find('>li[lay-id="'+ layid +'"]');
-    alert(layid);
     call.tabClick(null, null, liElem);
     return this;
   };
@@ -138,10 +137,7 @@ layui.define('jquery', function(exports){
         
         //允许关闭
         if(othis.attr('lay-allowClose')){
-          title.find('li').each(function(index){
-
-            //if(index<3)
-            //return false;
+          title.find('li').each(function(){
             var li = $(this);
             if(!li.find('.'+CLOSE)[0]){
               var close = $('<i class="layui-icon layui-unselect '+ CLOSE +'">&#x1006;</i>');
@@ -150,6 +146,18 @@ layui.define('jquery', function(exports){
             }
           });
         }
+
+        /*******loki luo*******/
+        if(othis.attr("change-lay-forbidclose-number")){
+          var number = parseInt(othis.attr("change-lay-forbidclose-number"));
+          title.find('li').each(function(index){
+            var li = $(this);
+            if(index<number){
+              li.find('i').remove();
+            }
+          });
+        }
+        /*******loki luo******/
         
         //响应式
         if(title.prop('scrollWidth') > title.outerWidth()+1){
