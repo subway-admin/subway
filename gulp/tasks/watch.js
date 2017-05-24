@@ -15,7 +15,7 @@ exports.task = function () {
             port:3003
         },
         open: false,
-        port:8085
+        port:8083
     });
     gulp.watch(['app/**/*.scss','app/**/*.html','app/**/*.js'],['default',sync.reload])
 };
