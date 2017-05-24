@@ -3,8 +3,6 @@ layui.use(['element','tree', 'layer'], function(){
 	$ = layui.jquery;
   	element = layui.element();
 
-
-
 	//获取菜单
 	asynLoad.ajax({
 		jquery:$,

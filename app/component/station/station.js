@@ -6,7 +6,7 @@ layui.use(['form','element'], function(){
     var $ = layui.jquery
         ,element = layui.element(); //Tab的切换功能，切换事件监听等，需要依赖element模块
     var form = layui.form();
-
+    loadCheckboxSelect();
     //增加测点
     $('.add-point').on('click',function(){
         getTab.init({
