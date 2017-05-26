@@ -21,7 +21,7 @@
 //表格样式修改
 .x-body,.dialog
 {
-  form{
+  form.layui-form{
     display: inline-block;
     position: relative;
     margin-bottom: 0;
@@ -49,6 +49,9 @@
         font-size: 16px;
         width: 22px;
       }
+    }
+    .layui-input-block{
+      vertical-align: middle;
     }
   }
 }

@@ -2,10 +2,11 @@
  * Created by 11561 on 2017/5/23.
  */
 
-layui.use(['form','element'], function(){
+layui.use(['form','element','upload'], function(){
     var $ = layui.jquery
         ,element = layui.element(); //Tab的切换功能，切换事件监听等，需要依赖element模块
     var form = layui.form();
+    layui.upload();
     loadCheckboxSelect();
     //增加测点
     $('.add-point').on('click',function(){
