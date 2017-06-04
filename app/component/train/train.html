@@ -13,28 +13,98 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="../../sass/x-admin.css" media="all">
     <link rel="stylesheet" href="../../sass/common.css">
-    <link rel="stylesheet" href="station.css">
+    <link rel="stylesheet" href="train.css">
 </head>
 <body>
 <div class="x-body">
     <div class="layui-tab" lay-filter="station" lay-allowclose="true" change-lay-forbidclose-number="3">
         <ul class="layui-tab-title">
-            <li class="layui-this" lay-id="11">纵向沉降监测数据</li>
-            <li lay-id="22">水平位移监测数据</li>
-            <li lay-id="33">管径收敛监测数据</li>
+            <li class="layui-this" lay-id="11">断面及里程信息</li>
+            <li lay-id="22">监护控制标准</li>
         </ul>
         <div class="layui-tab-content">
             <div class="layui-tab-item layui-show">
                 <form class="layui-form" action="">
-                    <div class="layui-btn layui-btn-primary add-point">增加测点</div>
-                    <div class="layui-btn layui-btn-primary">删除测点</div>
-                    <div class="layui-btn layui-btn-primary">标   注</div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <select name="city" lay-verify="required">
+                                <option value="">--请选择--</option>
+                                <option value="0">地铁1号线</option>
+                                <option value="0">地铁2号线</option>
+                                <option value="0">地铁3号线</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="layui-btn layui-btn-primary">增加数据</div>
+                    <div class="layui-btn layui-btn-primary">删除数据</div>
+                    <div class="layui-btn layui-btn-primary">清空数据</div>
+                    <div class="layui-btn layui-btn-primary">Excel导入</div>
+                    <div class="layui-btn layui-btn-primary">Excel导出</div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <select name="city" lay-verify="required">
+                                <option value="">--按条件搜索--</option>
+                                <option value="0">条件1</option>
+                                <option value="0">条件2</option>
+                                <option value="0">条件3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table class="layui-table">
+                        <thead>
+                        <tr>
+                            <th width="40"><input id="test" type="checkbox" /></th>
+                            <th>测点编号</th>
+                            <th>标注</th>
+                            <th>测点类别</th>
+                            <th>断面里程</th>
+                            <th>方向</th>
+                            <th>区段名称</th>
+                            <th>断面类型</th>
+                            <th>初测时间</th>
+                            <th>初始高程/m</th>
+                            <th>监测单位</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td width="40"><input type="checkbox" /></td>
+                            <td class="parent">SZ6980<span class="tip">1</span></td>
+                            <td>红色</td>
+                            <td>固定点</td>
+                            <td>P00+100</td>
+                            <td>左线</td>
+                            <td>四平路站-国权路站</td>
+                            <td>盾构隧道</td>
+                            <td>2016.01.02</td>
+                            <td>X,Y</td>
+                            <td>武汉市测绘院</td>
+                        </tr>
+                        <tr>
+                            <td width="40"><input type="checkbox" /></td>
+                            <td>SZ6980</td>
+                            <td>红色</td>
+                            <td>固定点</td>
+                            <td>P00+100</td>
+                            <td>左线</td>
+                            <td>四平路站-国权路站</td>
+                            <td>盾构隧道</td>
+                            <td>2016.01.02</td>
+                            <td>X,Y</td>
+                            <td>武汉市测绘院</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="layui-tab-item">
+                <form class="layui-form" action="">
+                    <div class="layui-btn layui-btn-primary">增加数据</div>
+                    <div class="layui-btn layui-btn-primary">删除数据</div>
+                    <div class="layui-btn layui-btn-primary">清空数据</div>
                     <div class="layui-btn layui-btn-primary">excel导入</div>
                     <div class="layui-btn layui-btn-primary">excel导出</div>
-                    <div class="layui-btn layui-btn-primary data-analysis">数据分析</div>
-                    <div class="layui-btn layui-btn-primary">重点断面</div>
-                    <input type="file" name="file1" lay-type="file" class="layui-upload-file">
-                    <input type="file" name="file" class="layui-upload-file">
+
                     <div class="layui-input-block">
                         <select name="city" lay-verify="required">
                             <option value="">按条件搜索</option>
@@ -92,150 +162,6 @@
                     </table>
                 </form>
             </div>
-            <div class="layui-tab-item">
-                <form class="layui-form" action="">
-                    <div class="layui-btn layui-btn-primary add-point">增加测点</div>
-                    <div class="layui-btn layui-btn-primary">删除测点</div>
-                    <div class="layui-btn layui-btn-primary">标   注</div>
-                    <div class="layui-btn layui-btn-primary">excel导入</div>
-                    <div class="layui-btn layui-btn-primary">excel导出</div>
-                    <div class="layui-btn layui-btn-primary data-analysis">数据分析</div>
-                    <div class="layui-btn layui-btn-primary">重点断面</div>
-
-                    <div class="layui-input-block">
-                        <select name="city" lay-verify="required">
-                            <option value="">按条件搜索</option>
-                            <option value="0">测点编号</option>
-                            <option value="1">标注</option>
-                            <option value="2">测点类别</option>
-                            <option value="3">断面里程</option>
-                            <option value="4">方向</option>
-                        </select>
-                    </div>
-                    <table class="layui-table">
-                        <thead>
-                        <tr>
-                            <th width="40"><input type="checkbox" /></th>
-                            <th>测点编号</th>
-                            <th>标注</th>
-                            <th>测点类别</th>
-                            <th>断面里程</th>
-                            <th>方向</th>
-                            <th>区段名称</th>
-                            <th>断面类型</th>
-                            <th>初测时间</th>
-                            <th>初始高程/m</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td width="40"><input type="checkbox" /></td>
-                            <td>SZ6980</td>
-                            <td>红色</td>
-                            <td>固定点</td>
-                            <td>P00+100</td>
-                            <td>左线</td>
-                            <td>四平路站-国权路站</td>
-                            <td>盾构隧道</td>
-                            <td>2016.01.02</td>
-                            <td>X,Y</td>
-                        </tr>
-                        <tr>
-                            <td width="40"><input type="checkbox" /></td>
-                            <td>SZ6980</td>
-                            <td>红色</td>
-                            <td>固定点</td>
-                            <td>P00+100</td>
-                            <td>左线</td>
-                            <td>四平路站-国权路站</td>
-                            <td>盾构隧道</td>
-                            <td>2016.01.02</td>
-                            <td>X,Y</td>
-                        </tr>
-                        <tr>
-                            <td width="40"><input type="checkbox" /></td>
-                            <td>SZ6980</td>
-                            <td>红色</td>
-                            <td>固定点</td>
-                            <td>P00+100</td>
-                            <td>左线</td>
-                            <td>四平路站-国权路站</td>
-                            <td>盾构隧道</td>
-                            <td>2016.01.02</td>
-                            <td>X,Y</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </form>
-
-            </div>
-            <div class="layui-tab-item">
-                <form class="layui-form" action="">
-                    <div class="layui-btn layui-btn-primary add-point">增加测点</div>
-                    <div class="layui-btn layui-btn-primary">删除测点</div>
-                    <div class="layui-btn layui-btn-primary">标   注</div>
-                    <div class="layui-btn layui-btn-primary">excel导入</div>
-                    <div class="layui-btn layui-btn-primary">excel导出</div>
-                    <div class="layui-btn layui-btn-primary data-analysis">数据分析</div>
-                    <div class="layui-btn layui-btn-primary">重点断面</div>
-
-                    <div class="layui-input-block">
-                        <select name="city" lay-verify="required">
-                            <option value="">按条件搜索</option>
-                            <option value="0">测点编号</option>
-                            <option value="1">标注</option>
-                            <option value="2">测点类别</option>
-                            <option value="3">断面里程</option>
-                            <option value="4">方向</option>
-                        </select>
-                    </div>
-                    <table class="layui-table">
-                        <thead>
-                        <tr>
-                            <th width="40"><input type="checkbox" /></th>
-                            <th>测点编号</th>
-                            <th>标注</th>
-                            <th>测点类别</th>
-                            <th>断面里程</th>
-                            <th>方向</th>
-                            <th>区段名称</th>
-                            <th>断面类型</th>
-                            <th>初测时间</th>
-                            <th>初始高程/m</th>
-                            <th>监测单位</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td width="40"><input type="checkbox" /></td>
-                            <td>SZ6980</td>
-                            <td>红色</td>
-                            <td>固定点</td>
-                            <td>P00+100</td>
-                            <td>左线</td>
-                            <td>四平路站-国权路站</td>
-                            <td>盾构隧道</td>
-                            <td>2016.01.02</td>
-                            <td>X,Y</td>
-                            <td>武汉市测绘院</td>
-                        </tr>
-                        <tr>
-                            <td width="40"><input type="checkbox" /></td>
-                            <td>SZ6980</td>
-                            <td>红色</td>
-                            <td>固定点</td>
-                            <td>P00+100</td>
-                            <td>左线</td>
-                            <td>四平路站-国权路站</td>
-                            <td>盾构隧道</td>
-                            <td>2016.01.02</td>
-                            <td>X,Y</td>
-                            <td>武汉市测绘院</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </form>
-            </div>
         </div>
     </div>
     <!--<button class="layui-btn site-demo-active" >新增Tab项</button>-->
@@ -249,9 +175,6 @@
 <script src="../../js/layerSer.js"></script>
 <script src="../../js/getTab.js"></script>
 <script src="../../js/common.js"></script>
-<script src="station.js"></script>
-<script src="add-point.js"></script>
-<script src="chart-monitoring.js"></script>
-<script src="chart-convergence.js"></script>
+<script src="train.js"></script>
 </body>
 </html>

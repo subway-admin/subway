@@ -15,6 +15,17 @@
     td,th{
       text-align: center;
     }
+    td.parent{
+      position: relative;
+      .tip{
+        position: absolute;
+        top:0;
+        right: 0;
+        background: deepskyblue;
+        padding: 0 5px;
+        color:white;
+      }
+    }
   }
 }
 

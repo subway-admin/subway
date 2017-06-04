@@ -17,7 +17,7 @@ layui.use(['form','element'], function() {
                 localUrl:"./chart-monitoring.html",
                 success:function(res){
                     element.tabAdd('station', {
-                        title: '沉降拟合分析'
+                        title: '沉降数据分析'
                         ,content: res
                         ,id: "monitoring"
                     });

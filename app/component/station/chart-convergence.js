@@ -49,19 +49,27 @@ layui.use(['form','element'], function() {
                         type: 'category',
                         name: '里程',
                         nameLocation: 'middle',
+                        splitLine: {show: false},
                         nameTextStyle: {
                             fontSize:16,
                             fontWeight : 'bold'
                         },
                         nameGap: 35,
-                        boundaryGap: false,
+                        boundaryGap: true,
                         axisLabel: {
-                            rotate: 90,
+                            rotate: 0,
                             textStyle : {
-                                fontWeight : 'bold'
+                                fontWeight : 'normal'
                             }
                         },
-                        data: ['2017/4/8','2017/4/8','2017/4/8','2017/4/8','2017/4/8','2017/4/8','2017/4/8','2017/4/8','2017/4/8']
+                        data: ['周一','周二','周三','周四','周五','周六','周日']
+
+                    },
+                    grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '53%',
+                        containLabel: true
                     },
                     yAxis: {
                         type: 'value'
@@ -72,7 +80,7 @@ layui.use(['form','element'], function() {
                             type:'line',
                             //data:[0, 0.1, 0.2],
                             //data:[0, 0.1, 0.2, 0.22, 0.23, 0.24, 0.25,0.28, 0.3],
-                            data:[-0.3,-0.28,-0.25,-0.24,0, 0.1, 0.2, 0.22, 0.23, 0.24, 0.25,0.28, 0.3],
+                            data:[-0.3,-0.28,-0.25],
                             markLine: {
                                 data: [
                                     {yAxis:180,name:'阈值控制'}

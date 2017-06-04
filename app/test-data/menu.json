@@ -2,14 +2,7 @@
   "nodes": [{
       "name": "轨道交通1号线",
       "tab_reset":true,
-      "array_url":[
-        {"name":"断面及里程信息",
-          "url":"../component/mileage/mileage.html"
-        },
-        {"name":"监护控制标准",
-          "url":"../component/custody/custody.html"
-        }
-      ],
+      "url":"../component/train/train.html",
       "id": 2,
       "spread": true,
       "children":[
