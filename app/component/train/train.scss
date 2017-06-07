@@ -1,21 +1,21 @@
 //station
-.layui-tab-item{
-  min-height:300px;
+.layui-tab-item {
+  min-height: 300px;
 }
 
 //add-point.html
-form.add-point-form{
+form.add-point-form {
   width: 100%;
-  >div{
+  > div {
     width: 100%;
-    .layui-form-item{
-      width:32.33%;
+    .layui-form-item {
+      width: 32.33%;
       min-width: 350px;
-      .layui-input-block{
+      .layui-input-block {
         width: 230px;
       }
-      &.layui-form-text{
-        .layui-input-block{
+      &.layui-form-text {
+        .layui-input-block {
           margin-left: 120px;
           display: block;
           width: 80%;
@@ -23,44 +23,79 @@ form.add-point-form{
       }
     }
   }
-  .control{
+  .control {
     text-align: center;
-    .layui-btn{
-      +.layui-btn{
-        margin-left:50px;
+    .layui-btn {
+      + .layui-btn {
+        margin-left: 50px;
       }
     }
   }
 }
 
 //data-analysis-dialog.html
-#data-analysis-dialog{
+#data-analysis-dialog {
   padding: 0 10px;
-  form{
+  form {
     width: 100%;
-    >div{
-      border-bottom:1px solid #cfcfcf;
-      .layui-form-item{
+    > div {
+      border-bottom: 1px solid #cfcfcf;
+      .layui-form-item {
         display: inline-block;
         margin: 10px 0;
-        .layui-form-label{
-          padding:9px 5px;
+        .layui-form-label {
+          padding: 9px 5px;
           text-align: center;
         }
 
       }
     }
-    >div.checkboxList{
-      .layui-form-item{
-        margin-right:20px;
+    > div.checkboxList {
+      .layui-form-item {
+        margin-right: 20px;
       }
     }
-    >div.confirm{
+    > div.confirm {
       text-align: center;
       padding: 15px 0;
-      .save{
+      .save {
         margin-right: 26px;
       }
     }
+  }
+}
+
+//chart-convergence
+.chart-warp {
+  #convergence {
+    width: 50%;
+    height: 400px;
+    float:left;
+  }
+  .chart-descript{
+    float:left;
+    margin-top: 50px;
+    >div{
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}
+
+//chart-valve
+.chart-warp {
+  #chart-valve {
+    width: 50%;
+    height: 400px;
+    margin: 0 25%;
+  }
+}
+
+//chart-valve-control
+.chart-warp {
+  #chart-valve-control {
+    width: 50%;
+    height: 400px;
+    margin: 0 25%;
   }
 }
