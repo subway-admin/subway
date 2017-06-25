@@ -64,3 +64,20 @@ form.add-point-form{
     }
   }
 }
+
+//图标
+.chart-warp {
+  #curve-dialog {
+    width: 60%;
+    height: 400px;
+    float:left;
+  }
+  .chart-descript{
+    float:left;
+    margin-top: 50px;
+    >div{
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}

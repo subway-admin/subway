@@ -72,6 +72,18 @@ form.add-point-form {
     height: 400px;
     float:left;
   }
+  //chart-valve
+  #chart-valve {
+    width: 50%;
+    height: 400px;
+    margin: 0 25%;
+  }
+  //chart-valve-control
+  #chart-valve-control {
+    width: 50%;
+    height: 400px;
+    margin: 0 25%;
+  }
   .chart-descript{
     float:left;
     margin-top: 50px;
@@ -79,23 +91,5 @@ form.add-point-form {
       height: 50px;
       line-height: 50px;
     }
-  }
-}
-
-//chart-valve
-.chart-warp {
-  #chart-valve {
-    width: 50%;
-    height: 400px;
-    margin: 0 25%;
-  }
-}
-
-//chart-valve-control
-.chart-warp {
-  #chart-valve-control {
-    width: 50%;
-    height: 400px;
-    margin: 0 25%;
   }
 }

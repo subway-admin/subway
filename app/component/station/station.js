@@ -71,5 +71,88 @@ layui.use(['form','element','upload'], function(){
         });
     });
 
+    $(document).on('click','.curve',function(){
+        layerSer.init({
+            jquery:$,
+            localUrl:"./curve-dialog.html"
+        },{
+            title:"自定义分析条件",
+            area: ['1000px',''],
+            btn:"",
+            id:"data-curve-dialog",
+            callback:function(){
+                //弹框逻辑执行
+                var myChart = echarts.init(document.getElementById('curve-dialog'));
+
+                // 指定图表的配置项和数据
+                option = {
+                    title: {
+                        left: 'center',
+                        text: '收敛数据分析',
+                        //subtext: '纯属虚构'
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        data:['','里程']
+                    },
+                    toolbox: {
+                        feature: {
+                            restore: {title: '重新断面'},
+                            saveAsImage: {}
+                        },
+                        right:50
+                    },
+                    xAxis:  {
+                        type: 'category',
+                        name: '里程',
+                        nameLocation: 'middle',
+                        splitLine: {show: false},
+                        nameTextStyle: {
+                            fontSize:16,
+                            fontWeight : 'bold'
+                        },
+                        nameGap: 35,
+                        boundaryGap: true,
+                        axisLabel: {
+                            rotate: 0,
+                            textStyle : {
+                                fontWeight : 'normal'
+                            }
+                        },
+                        data: ['2014/5/7','2014/5/7','2014/5/7','2014/5/7','2014/5/7','2014/5/7','2014/5/7','2014/5/7','2014/5/7']
+
+                    },
+                    grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '10%',
+                        containLabel: true
+                    },
+                    yAxis: {
+                        type: 'value'
+                    },
+                    series: [
+                        {
+                            name:'',
+                            type:'line',
+                            //data:[0, 0.1, 0.2],
+                            data:[0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+                            //data:[-0.3,-0.28,-0.25],
+                            markLine: {
+                                data: [
+                                    {yAxis:180,name:'阈值控制'}
+                                ]
+                            }
+                        }
+                    ]
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+            }
+        });
+    })
+
 });
 

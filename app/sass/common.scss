@@ -2,6 +2,18 @@
 //按钮
 .layui-btn-primary{
   border-radius: 10px;
+  &.parent{
+    position: relative;
+    .tip{
+      position: absolute;
+      top:0;
+      right: 0;
+      background: deepskyblue;
+      padding: 0 5px;
+      color:white;
+      line-height: normal;
+    }
+  }
 }
 .layui-btn-primary:hover{
   color:$col_theme;
