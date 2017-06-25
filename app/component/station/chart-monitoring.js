@@ -50,18 +50,35 @@ layui.use(['form','element'], function() {
                         },
                         xAxis: {
                             type: "category",
-                            boundaryGap: false,
-                            data: [0,400,800,1200,1600,2000,2400,2800,3200,3600,4000,4400,4800,5200,5600,6000,6400,6800,7200,7600]
+                            boundaryGap: true,
+                            data: [0,400,800,1200,1600,2000,2400,2800,3200,3600,4000,4400,4800,5200,5600,6000,6400,6800,7200,7600],
+                            splitNumber:10
                         },
                         yAxis: {
-                            type: "value"
+                            type: "value",
+                            splitNumber:5,
+                            minInterval:0,
+                            max:500
                         },
                         series: [
                             {
                                 name:"温度",
                                 type:"line",
                                 stack: "里程",
+
+                                lineStyle:{
+                                    normal:{
+                                        type:"dashed"
+
+                                    }
+                                },
                                 data:[120, 132, 101, 134, 90, 230, 210,120, 132, 101, 134, 90, 230, 210,120, 132, 101, 134, 90, 230, 210]
+                            },
+                            {
+                                name:"湿度",
+                                type:"line",
+                                stack: "里程",
+                                data:[20, 232, 401, 34, 40, 30, 10,20, 12, 11, 34, 9, 30, 20,20, 32, 10, 13, 9, 30, 21]
                             }
                         ]
                     };
