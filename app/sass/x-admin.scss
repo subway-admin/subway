@@ -12,6 +12,12 @@
 .header-demo .layui-nav .layui-this:after, .header-demo .layui-nav-bar {
     background-color: #393D49;
 }
+.layui-this{
+  background-color: #ffffff;
+}
+.layui-tab-title{
+  background-color: #E8E8E8;
+}
 
 .layui-layout-admin .layui-side{
 	top: 60px;
@@ -312,8 +318,11 @@ body .layui-layout-admin .site-demo{bottom: 82px; padding: 0;height: 100%}
 	height: 100%;
 }
 .x-iframe{
-	width: 100%;
+	min-width: 1150px;
+    max-width: 1900px;
 	height: 100%;
+    overflow: auto;
+
 }
 body .site-demo-nav .layui-nav-item{line-height: 40px}
 .layui-nav-item .layui-icon{position: relative; font-size: 20px;}
