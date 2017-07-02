@@ -1,4 +1,7 @@
 @import "veriable";
+body:not(.home){
+  min-width: 1000px;
+}
 //按钮
 .layui-btn-primary{
   border-radius: 10px;

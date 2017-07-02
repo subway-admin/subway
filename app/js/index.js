@@ -33,8 +33,8 @@ layui.use(['element','tree', 'layer'], function(){
 	});
 
 	//iframe高度
-	height = $('.layui-layout-admin .site-demo').height();
-	$('.layui-layout-admin .site-demo').height(height-100);
+	//height = $('.layui-layout-admin .site-demo').height();
+	$('.layui-layout-admin .site-demo').height($(window).height()-60);
 
 	//显示隐藏侧边栏
 	if($(window).width()<750){
